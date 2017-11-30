@@ -1,0 +1,51 @@
+﻿@model WebApplication1.Models.MateriaModels
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>MateriaModels</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Materia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Materia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota_Materia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota_Materia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Legajo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Legajo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  nombre = Model.Nombre_Materia }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
